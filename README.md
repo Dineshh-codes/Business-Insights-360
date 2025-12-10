@@ -1,133 +1,94 @@
-⭐ Business Insights 360 – Power BI End-to-End Analytics Solution
+📊 Business Insights 360 – Power BI End-to-End Analytics Solution
 
-This project represents a full Business Insight 360° analytics solution built for AtliQ Hardware, a global consumer electronics company expanding across multiple channels. After facing major losses in Latin America due to intuition-based decisions and Excel-driven reporting, the company initiated a BI transformation to bring transparency, accuracy, and data-driven decision-making into its operations.
+This project represents a full Business Insight 360° analytics solution built for AtliQ Hardware, a global consumer electronics company operating through retail, distribution, and direct channels. After facing major losses in the Latin America market due to intuition-based decisions and Excel-driven reporting, the company began a BI transformation to bring transparency, accuracy, and data-driven decision-making across the organization.
 
 This repository documents the end-to-end Power BI solution created as part of that initiative.
-(Note: Due to confidentiality, no datasets or PBIX reports are included.)
+⚠️ Due to confidentiality, no datasets or PBIX reports are included.
 
 🚀 Project Overview
 
-The goal of this project was to give leadership a 360° view of business performance across Finance, Sales, Marketing, Supply Chain, and Executive functions.
-The analytics solution integrates multiple data sources, applies structured cleaning and transformation through Power Query and SQL, and implements a scalable star schema model to support advanced DAX analysis.
+The goal of this project was to provide leadership with a 360° view of business performance across Finance, Sales, Marketing, Supply Chain, and Executive functions. The analytics solution integrates multiple data sources, applies structured cleaning and transformation through Power Query and SQL, and uses a scalable star-schema model to support advanced DAX calculations.
 
 The final solution delivers insights on:
+• 📈 Revenue & margin trends
+• 👥 Customer & product performance
+• 🌍 Market-level analysis
+• 🔄 Forecast accuracy & supply chain reliability
+• 🏢 Executive summaries & company-wide KPIs
 
-Revenue and margin trends
+📊 Dashboard Views
 
-Customer and product performance
+Live Dashboard Link : https://app.powerbi.com/view?r=eyJrIjoiMDIyMTBhYjktMzA1Ny00MjgwLWIwYzMtNjExMWQxNmZlNDg1IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9
 
-Market-level growth
-
-Supply chain forecast accuracy
-
-Executive-level KPIs and summaries
-
-This simulates how modern enterprises evolve from Excel-based workflows to a BI-driven analytics ecosystem.
-
-📊 Dashboard Views (Business-Focused Summary)
 1️⃣ Finance View – P&L & Profitability
-
-A dynamic P&L report enabling profitability analysis at any level—market, customer, product, or a combination.
+Dynamic P&L reporting with drilldowns across customer, product, country, or any time period.
 
 2️⃣ Sales View – Customer Insights
-
 Customer performance benchmarking using Net Sales, Gross Margin %, Growth, and a Profitability/Growth matrix.
 
 3️⃣ Marketing View – Product Insights
-
-Product-level profitability and growth matrices to highlight top and underperforming SKUs and categories.
+Performance comparison across products, categories, and segments using profitability and growth matrices.
 
 4️⃣ Supply Chain View – Forecast Accuracy
+KPIs including Forecast Accuracy, Net Error, and Risk Profiles across product categories and customer groups.
 
-KPIs for Reliability, Forecast Accuracy, Net Error, and Risk Profiles across product categories and segments.
+5️⃣ Executive View – Company Summary
+High-level KPIs and insights consolidated for leadership decision-making.
 
-5️⃣ Executive View – Cross-Functional Summary
+🧱 Data Model (Star Schema)
 
-A consolidated, leadership-ready view highlighting the most critical metrics across all business functions.
+📁 Dimension Tables
+• dim_product
+• dim_customer
+• dim_market
+• dim_date
 
-🧱 Data Model (High-Level)
+📦 Fact Tables
+• fact_sales_monthly
+• fact_forecast_monthly
+(merged into fact_actuals_estimate)
 
-A structured analytics model using the following tables:
-
-Dimension Tables
-
-dim_product
-
-dim_customer
-
-dim_market
-
-dim_date
-
-Fact Tables
-
-fact_sales_monthly
-
-fact_forecast_monthly
-(combined into fact_actuals_estimate)
-
-Supporting Fact Tables
-
-freight_cost
-
-manufacturing_cost
-
-pre_invoice_discount
-
-post_invoice_discount
-
-operational_costs
-
-gross_price
-
-targets
-
-This enables a clean star schema optimized for clarity, performance, and scalability.
+🔧 Supporting Fact Tables
+• freight_cost
+• manufacturing_cost
+• pre_invoice_discount
+• post_invoice_discount
+• operational_costs
+• gross_price
+• targets
 
 🛠 Tech Stack
-Tool	Purpose
-Power BI	Modeling, DAX, interactive dashboards
-Power Query	ETL, data cleaning & transformation
-SQL	Source extraction, joins, validations
-Excel	Master/reference datasets
-DAX Studio	Performance tuning and optimization
+
+• 🟡 Power BI – Dashboards, DAX, modeling
+• 🔵 Power Query – ETL, data cleaning, transformation
+• 🟣 SQL – Data extraction, joins, validation
+• 🟢 Excel – Master & reference data
+• ⚙️ DAX Studio – Performance tuning (storage ↓30%, speed ↑10%)
+
 📈 Key Outcomes
 
-Transitioned leadership from Excel-driven insights to a modern BI framework
-
-Improved visibility across financial, operational, and commercial metrics
-
-Provided actionable insights on customer, product, and market performance
-
-Identified patterns contributing to past regional losses (e.g., Latin America)
-
-Created a scalable analytics layer that supports strategic decisions
+• Enabled leadership to shift from Excel to BI-driven decision-making
+• Improved transparency across financial, sales, and operational metrics
+• Identified trends contributing to earlier regional losses
+• Delivered interactive dashboards across 5 business functions
+• Created a scalable analytics system supporting long-term reporting needs
 
 📂 Repository Contents
 
-README.md – Full project documentation
-
-Screenshots Folder (if available) – High-level previews
-
-Model & Workflow Notes – Descriptions of transformations and logic
-
-No datasets or PBIX files (restricted due to confidentiality)
+• README.md – Project documentation
+• Screenshots folder – Dashboard previews
+⚠️ No data sources or PBIX files due to confidentiality
 
 🎯 What This Project Demonstrates
 
-Real-world BI problem solving
-
-Ability to convert business problems into data models and dashboards
-
-Strong Power BI, DAX, and data modeling expertise
-
-Multi-source ETL pipeline experience
-
-Cross-functional analytics across Finance, Sales, Marketing, and Supply Chain
-
-Executive-level storytelling and KPI design
+• Strong Power BI & DAX development skills
+• Multi-source ETL pipeline design (SQL + Power Query)
+• Star schema modeling for analytics
+• Cross-functional insights across Finance, Sales, Marketing & Supply Chain
+• Ability to convert business needs into meaningful dashboards
+• Clear storytelling through data
 
 📄 License
 
-This project is licensed under the MIT License.
-(All analysis logic is shared; datasets and PBIX files are not included.)
+This project is released under the MIT License.
+(Datasets and PBIX files are not included.)
