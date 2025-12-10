@@ -1,109 +1,133 @@
-# Business-Insights-360
-This project delivers a comprehensive Business Insight 360 analytics solution for a global hardware company operating across brick-and-mortar and e-commerce channels. Using Power BI, SQL, Excel, Power Query, and DAX Studio, the project provides a unified analytical view for sales, finance, supply chain, marketing, and executive teams.
-# 📊 Business Insight 360 – Brick & Mortar & E-Commerce  
-### Power BI | SQL | Excel | Power Query | DAX Studio  
+⭐ Business Insights 360 – Power BI End-to-End Analytics Solution
 
-A full-scale analytics project designed to give a **360° business view** of a global hardware company operating across both **brick-and-mortar** and **e-commerce** channels.  
-This Power BI solution provides unified insights for **Sales, Finance, Supply Chain, Marketing, and Executive teams**, enabling faster, data-driven decisions.
+This project represents a full Business Insight 360° analytics solution built for AtliQ Hardware, a global consumer electronics company expanding across multiple channels. After facing major losses in Latin America due to intuition-based decisions and Excel-driven reporting, the company initiated a BI transformation to bring transparency, accuracy, and data-driven decision-making into its operations.
 
----
+This repository documents the end-to-end Power BI solution created as part of that initiative.
+(Note: Due to confidentiality, no datasets or PBIX reports are included.)
 
-## 🚀 Project Overview
+🚀 Project Overview
 
-This dashboard consolidates data from multiple sources and transforms it into a cohesive analytical model that highlights:
+The goal of this project was to give leadership a 360° view of business performance across Finance, Sales, Marketing, Supply Chain, and Executive functions.
+The analytics solution integrates multiple data sources, applies structured cleaning and transformation through Power Query and SQL, and implements a scalable star schema model to support advanced DAX analysis.
 
-- Revenue performance trends  
-- Segment-wise and region-wise sales  
-- Category-level insights  
-- Profitability and operational KPIs  
-- Executive-level summaries  
+The final solution delivers insights on:
 
-The goal of this project is to provide a **centralized intelligence layer** for leadership to evaluate business health and make informed decisions.
+Revenue and margin trends
 
----
+Customer and product performance
 
-## 📂 Data & Processing
+Market-level growth
 
-Although the dataset itself is **not included** in this repository, the project utilized:
+Supply chain forecast accuracy
 
-- **1.8M+ records** from  
-  - **MySQL** (transactional data)  
-  - **Excel** (master & reference data)  
+Executive-level KPIs and summaries
 
-### ✔ ETL & Modeling Steps:
-- Data cleaning, merging, and transformation using **Power Query**  
-- Schema design and data modeling using **star schema principles**  
-- Performance optimization using **DAX Studio** (storage reduced by 30%, report speed improved by 10%)  
-- KPI modeling for revenue, margin, category performance, and operational metrics  
+This simulates how modern enterprises evolve from Excel-based workflows to a BI-driven analytics ecosystem.
 
----
+📊 Dashboard Views (Business-Focused Summary)
+1️⃣ Finance View – P&L & Profitability
 
-## 📈 Key Features
+A dynamic P&L report enabling profitability analysis at any level—market, customer, product, or a combination.
 
-### 🔹 **Multi-View Dashboard**
-Dedicated dashboard views for:
-- Sales  
-- Finance  
-- Supply Chain  
-- Marketing  
-- Executive Leadership  
+2️⃣ Sales View – Customer Insights
 
-Each view includes interactive charts, KPIs, slicers, and drill-throughs.
+Customer performance benchmarking using Net Sales, Gross Margin %, Growth, and a Profitability/Growth matrix.
 
----
+3️⃣ Marketing View – Product Insights
 
-### 🔹 **Performance Highlights**
-- Integrated and transformed **1.8M+ rows** to create a clean analytical model  
-- Constructed efficient DAX measures for KPI calculations  
-- Optimized model using DAX Studio for improved performance  
-- Provided KPI-driven insights that enhanced reporting efficiency by **25%**  
+Product-level profitability and growth matrices to highlight top and underperforming SKUs and categories.
 
----
+4️⃣ Supply Chain View – Forecast Accuracy
 
-## 🛠 Tech Stack
+KPIs for Reliability, Forecast Accuracy, Net Error, and Risk Profiles across product categories and segments.
 
-| Tool / Tech | Usage |
-|-------------|--------|
-| **Power BI** | Visualizations, modeling, dashboards |
-| **SQL (MySQL)** | Data extraction, cleaning, joins |
-| **Power Query** | ETL operations |
-| **Excel** | Master data, intermediate cleaning |
-| **DAX Studio** | Performance tuning, optimization |
+5️⃣ Executive View – Cross-Functional Summary
 
----
+A consolidated, leadership-ready view highlighting the most critical metrics across all business functions.
 
-## 🧠 Key Business Insights Uncovered
+🧱 Data Model (High-Level)
 
-- Identified top-performing markets and underperforming categories  
-- Analyzed quarterly revenue movement and margin patterns  
-- Highlighted supply chain delays through trend analysis  
-- Provided segment-specific insights for marketing optimization  
-- Delivered executive-level KPIs for strategic planning  
+A structured analytics model using the following tables:
 
----
+Dimension Tables
 
-## 📌 Repository Contents
+dim_product
 
-- `README.md` – Project documentation (this file)  
-- Dashboard screenshots (if added)  
-- SQL scripts (optional)  
-- Workflow description  
-- Data model explanation  
+dim_customer
 
-*Note: Dataset and PBIX file are not included due to confidentiality.*
+dim_market
 
----
+dim_date
 
-## 📘 Learning Outcomes
+Fact Tables
 
-This project demonstrates:
-- Strong Power BI development capabilities  
-- Data modeling and DAX proficiency  
-- Experience with multi-source ETL pipelines  
-- Dashboard storytelling and analytics visualization  
-- Performance optimization with DAX Studio  
+fact_sales_monthly
 
----
-## 📄 License
+fact_forecast_monthly
+(combined into fact_actuals_estimate)
 
-This project is licensed under the **MIT License**.
+Supporting Fact Tables
+
+freight_cost
+
+manufacturing_cost
+
+pre_invoice_discount
+
+post_invoice_discount
+
+operational_costs
+
+gross_price
+
+targets
+
+This enables a clean star schema optimized for clarity, performance, and scalability.
+
+🛠 Tech Stack
+Tool	Purpose
+Power BI	Modeling, DAX, interactive dashboards
+Power Query	ETL, data cleaning & transformation
+SQL	Source extraction, joins, validations
+Excel	Master/reference datasets
+DAX Studio	Performance tuning and optimization
+📈 Key Outcomes
+
+Transitioned leadership from Excel-driven insights to a modern BI framework
+
+Improved visibility across financial, operational, and commercial metrics
+
+Provided actionable insights on customer, product, and market performance
+
+Identified patterns contributing to past regional losses (e.g., Latin America)
+
+Created a scalable analytics layer that supports strategic decisions
+
+📂 Repository Contents
+
+README.md – Full project documentation
+
+Screenshots Folder (if available) – High-level previews
+
+Model & Workflow Notes – Descriptions of transformations and logic
+
+No datasets or PBIX files (restricted due to confidentiality)
+
+🎯 What This Project Demonstrates
+
+Real-world BI problem solving
+
+Ability to convert business problems into data models and dashboards
+
+Strong Power BI, DAX, and data modeling expertise
+
+Multi-source ETL pipeline experience
+
+Cross-functional analytics across Finance, Sales, Marketing, and Supply Chain
+
+Executive-level storytelling and KPI design
+
+📄 License
+
+This project is licensed under the MIT License.
+(All analysis logic is shared; datasets and PBIX files are not included.)
